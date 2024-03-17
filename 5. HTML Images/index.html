@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <!-- 
+        The `<img>` tag in HTML is used to embed images into a web page. It's a self-closing tag, meaning it does not require an end tag, and it has several attributes to specify the image's source, alternative text, size, and more. Here's an overview of how to use the `<img>` tag and its key attributes:
+
+### Basic Usage
+To display an image, you need to use the `src` (source) attribute to specify the path to the image file. 
+
+- **Syntax**: `<img src="url">`
+- **Example**: `<img src="image.jpg">`
+
+### Alternative Text (`alt` Attribute)
+The `alt` attribute provides alternative information for an image if a user for some reason cannot view it (due to slow connection, an error in the `src` attribute, or if the user uses a screen reader). The `alt` attribute is crucial for accessibility and SEO.
+
+- **Example**: `<img src="image.jpg" alt="Description of the image">`
+
+### Setting Image Dimensions
+You can specify the width and height of an image using the `width` and `height` attributes. This can be in pixels or as a percentage of its container.
+
+- **Example**: `<img src="image.jpg" alt="Description" width="500" height="600">`
+
+### Image Title
+The `title` attribute can provide additional information about the image, typically displayed as a tooltip when the mouse hovers over the image.
+
+- **Example**: `<img src="image.jpg" alt="Description" title="Hover text">`
+
+### Handling Responsiveness
+To make an image responsive (i.e., to scale nicely to the size of its container), you can set its `width` to `100%` and `height` to `auto`:
+
+- **Example**: `<img src="image.jpg" alt="Description" style="width:100%; height:auto;">`
+
+### SVG Images
+You can also embed SVG graphics directly into HTML using the `<img>` tag:
+
+- **Example**: `<img src="image.svg" alt="Description">`
+
+### Inline Images with Data URLs
+It's possible to embed an image directly in HTML using a data URL. This can be useful for small images to avoid additional HTTP requests, but it increases the size of your HTML document.
+
+- **Example**: `<img src="data:image/jpeg;base64,/9j/4AAQSkZJR...">`
+
+### Accessibility Considerations
+Always include the `alt` attribute to describe the image's content or function. This description is crucial for users who rely on screen readers and also serves as a placeholder if the image cannot be loaded.
+
+When using images on a webpage, it's important to optimize them for the web to ensure they load quickly without sacrificing quality. This involves selecting the right file format (e.g., JPEG, PNG, WebP) and compressing the image to reduce its file size.
+     -->
+
+    <!-- Local Image -->
+    <img src="html.jpg" width="200px" alt="HTML Image" />
+    <!-- Online image-->
+    <img
+      src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      width="200px"
+      alt="HTML Image"
+    />
+  </body>
+</html>

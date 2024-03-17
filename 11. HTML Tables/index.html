@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- 
+        HTML tables are used to organize and display data in a grid-like structure of rows and columns. They are defined using the `<table>` element, with rows represented by `<tr>` elements, headers by `<th>` elements, and standard cells by `<td>` elements.
+
+### Basic Table Structure
+
+- **`<table>`**: The container element for the table.
+- **`<tr>`**: Defines a row in the table.
+- **`<th>`**: Represents a header cell in a table, which is typically bold and centered by default. The `scope` attribute (with values `row` or `col`) can be used to specify whether the header is for a row, a column, or a group of rows or columns.
+- **`<td>`**: Defines a standard cell in the table, which contains data.
+
+### Additional Elements for Structuring Tables
+
+- **`<thead>`**: Contains header content for a table, grouping multiple `<th>` elements. It's used to define a set of rows that constitute the column headers.
+- **`<tbody>`**: Wraps the main content of the table. There can be multiple `<tbody>` elements to group rows logically.
+- **`<tfoot>`**: Contains footer content for the table, which can summarize or provide additional details about the data in the `<tbody>` section.
+
+### Attributes for Enhancing Tables
+
+- **`colspan`**: Allows a cell to span multiple columns.
+- **`rowspan`**: Allows a cell to span multiple rows.
+- **`border`**, **`width`**, **`cellpadding`**, and **`cellspacing`**: Legacy attributes used to style tables. It's now recommended to use CSS for table styling.
+
+### Example of a Simple Table
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Jane Doe</td>
+      <td>28</td>
+      <td>Los Angeles</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+### Styling Tables
+
+While HTML is used to create the structure of a table, CSS is typically used to style it. You can control the appearance of tables, rows, cells, and borders using CSS properties.
+
+### Accessibility Considerations
+
+When creating tables, it's important to ensure they are accessible:
+- Use `<th>` elements with `scope` attributes to define headers for rows and columns.
+- Consider using the `<caption>` element to provide a title or explanation for the table, which is beneficial for screen reader users.
+
+Tables are a powerful tool for displaying data but should be used judiciously. They are best suited for tabular data and not recommended for page layout purposes, as this can create accessibility issues and make responsive design more challenging.
+     -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Doe</td>
+          <td>24</td>
+          <td>USA</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
