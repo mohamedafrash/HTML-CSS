@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Colors</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Colors</h1>
+    <p>
+      In CSS, colors can be specified in various ways, offering flexibility in
+      design and styling. They can be applied to text, backgrounds, borders, and
+      other elements. Here are the primary methods to define colors in CSS: ###
+      Named Colors CSS supports a set of predefined color names, such as `red`,
+      `green`, `blue`, `black`, `white`, and many others. These are intuitive
+      and easy to remember. - **Example**: `color: blue;` ### HEX Values HEX
+      color values are specified with a hash symbol (#) followed by a 6-digit
+      code, which represents the intensity of red, green, and blue (in
+      hexadecimal notation). There are also shorthand 3-digit HEX codes for
+      colors with equal red, green, and blue components. - **Example**: `color:
+      #FF5733;` (Full HEX) or `color: #F00;` (Shorthand HEX for red) ### RGB and
+      RGBA RGB color values are defined using the `rgb()` function with three
+      parameters for red, green, and blue, each ranging from 0 to 255. RGBA adds
+      a fourth parameter, alpha, which specifies the opacity of the color,
+      ranging from 0 (fully transparent) to 1 (fully opaque). - **Examples**: -
+      RGB: `color: rgb(255, 87, 51);` - RGBA: `color: rgba(255, 87, 51, 0.5);`
+      ### HSL and HSLA HSL stands for Hue, Saturation, and Lightness. Hue is
+      specified as an angle (from 0 to 360) on the color wheel, saturation is a
+      percentage value, and lightness is also a percentage. HSLA adds an alpha
+      channel for opacity. - **Examples**: - HSL: `color: hsl(9, 100%, 60%);` (A
+      shade of red) - HSLA: `color: hsla(9, 100%, 60%, 0.5);` ### CurrentColor
+      The `currentColor` keyword refers to the current value of the `color`
+      property. It allows you to use the color defined for text as a value for
+      other properties like `border-color` or `background-color`. - **Example**:
+      `border: 1px solid currentColor;` ### Transparency with Opacity The
+      `opacity` property in CSS doesn't specify a color but affects the
+      transparency level of an element, including its content, and is defined by
+      a number between 0.0 (completely transparent) and 1.0 (completely opaque).
+      - **Example**: `opacity: 0.5;` When choosing colors, consider readability,
+      contrast, and accessibility to ensure content is easily discernible to all
+      users. Tools like color pickers and online resources can help you select
+      and harmonize colors for your web designs.
+    </p>
+    <h2>RGB Values</h2>
+    <p class="rgba">RGBA Values</p>
+    <p class="hsl">HSL Values</p>
+  </body>
+</html>

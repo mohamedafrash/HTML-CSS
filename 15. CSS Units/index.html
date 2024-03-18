@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Units</h1>
+    <h2>Absolute Units</h2>
+    <p>
+      px (Pixels): The most common unit used in screen-based design. One pixel
+      is equal to one dot on the digital screen.
+    </p>
+    <div class="px"></div>
+    <h2>Relative Units</h2>
+    <p>
+      Relative units are flexible and change their value based on other
+      properties, making them very useful for responsive design.
+    </p>
+    <p class="em">
+      em: Relative to the font-size of the element. If you haven't set font size
+      anywhere on the page, then it is relative to the browser's default font
+      size (usually 16px). An em is equal to the computed font size of its
+      parent.
+    </p>
+    <p class="rem">
+      rem (Root EM): Similar to em, but always relative to the root element's
+      (html) font size, making it consistent across the entire document.
+    </p>
+    <p>
+      vw (Viewport Width): Based on 1% of the width of the viewport. For
+      example, 50vw is 50% of the viewport width. vh (Viewport Height): Based on
+      1% of the height of the viewport. For example, 50vh is 50% of the viewport
+      height.
+    </p>
+    <div class="vw"></div>
+    <p>
+      % (Percentage): Often used for widths, margins, and padding, and is
+      relative to the parent element's dimension.
+    </p>
+  </body>
+</html>

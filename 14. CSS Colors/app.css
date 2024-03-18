@@ -1,0 +1,19 @@
+h1{
+    color: firebrick;
+}
+
+p{
+    color: #145689;
+}
+
+h2{
+    color: rgb(156, 95, 89);
+}
+
+.rgba{
+    color: rgba(58, 58, 59, .9);
+}
+
+.hsl{
+    color: hsl(295, 100%, 60%);
+}

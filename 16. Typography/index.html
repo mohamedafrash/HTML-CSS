@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Typography</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>software dev</h1>
+    <p class="lor">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque aliquid
+      dolore alias ipsum ex temporibus aspernatur aperiam voluptatum dolor, sed
+      eius aut dolorum. Deleniti, similique, nemo, tempore totam dolorem maxime
+      atque ducimus reiciendis fugit nesciunt corporis fugiat assumenda
+      distinctio placeat possimus sequi aliquam tenetur veritatis. Voluptatibus
+      veritatis illo deleniti iure?
+    </p>
+
+    <a href="#">Learn More</a>
+
+    <p>
+      Typography in CSS involves using various properties to style text,
+      enhancing readability, user experience, and the visual appeal of web
+      content. Here are key typography-related CSS properties: ### Font
+      Properties - **`font-family`**: Specifies the typeface to be used for the
+      text. You can specify a list of font names as fallbacks, ending with a
+      generic font family (`serif`, `sans-serif`, `monospace`, `cursive`,
+      `fantasy`). - **Example**: `font-family: "Helvetica Neue", Helvetica,
+      Arial, sans-serif;` - **`font-size`**: Sets the size of the font. Common
+      units include `px`, `em`, `rem`, and `%`. - **Example**: `font-size:
+      16px;` - **`font-weight`**: Defines the weight (or boldness) of the font.
+      Values can be `normal`, `bold`, `bolder`, `lighter`, or numeric values
+      like `400` (normal) and `700` (bold). - **Example**: `font-weight: bold;`
+      - **`font-style`**: Specifies the style of the font, such as `normal`,
+      `italic`, or `oblique`. - **Example**: `font-style: italic;` -
+      **`font-variant`**: Allows you to specify a small-caps variant of the font
+      (`normal` or `small-caps`). - **Example**: `font-variant: small-caps;` ###
+      Text Formatting and Alignment - **`text-align`**: Controls the horizontal
+      alignment of text. Values include `left`, `right`, `center`, and
+      `justify`. - **Example**: `text-align: center;` - **`line-height`**: Sets
+      the height of a line. It can be a number (without any unit, which acts as
+      a multiplier of the font size), a length, or a percentage. - **Example**:
+      `line-height: 1.5;` - **`text-transform`**: Controls the capitalization of
+      text. Values include `none`, `capitalize`, `uppercase`, and `lowercase`. -
+      **Example**: `text-transform: uppercase;` - **`text-decoration`**:
+      Specifies decorations added to text, such as `underline`, `overline`,
+      `line-through`, and `none`. - **Example**: `text-decoration: underline;` -
+      **`letter-spacing`**: Adjusts the space between characters in text. -
+      **Example**: `letter-spacing: 2px;` - **`word-spacing`**: Controls the
+      space between words in a piece of text. - **Example**: `word-spacing:
+      1.5em;` ### Color and Background - **`color`**: Sets the color of the
+      text. - **Example**: `color: #333;` - **`text-shadow`**: Applies shadow to
+      text, taking values for horizontal and vertical offsets, an optional blur
+      radius, and a color. - **Example**: `text-shadow: 2px 2px 4px #000;` ###
+      Web Fonts CSS also allows for the use of web fonts through the
+      `@font-face` rule, enabling custom fonts to be downloaded to the client's
+      computer before being displayed. - **Example**: ```css @font-face {
+      font-family: "MyWebFont"; src: url("mywebfont.woff2") format("woff2"); }
+      body { font-family: "MyWebFont", sans-serif; } ``` Effective use of
+      typography in CSS can significantly enhance the user interface and
+      experience of web applications and websites by improving readability,
+      accessibility, and aesthetic appeal.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to Write CSS</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+      .internal {
+        color: red;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <p>
+      CSS (Cascading Style Sheets) is a stylesheet language used to describe the
+      presentation of a document written in HTML or XML (including XML dialects
+      such as SVG or XHTML). CSS describes how elements should be rendered on
+      screen, on paper, in speech, or on other media. It's one of the
+      cornerstone technologies of the World Wide Web, alongside HTML and
+      JavaScript. CSS enables the separation of presentation and content,
+      including layout, colors, and fonts. This separation improves content
+      accessibility and provides more flexibility and control in the
+      specification of presentation characteristics. It also enables multiple
+      web pages to share formatting, reducing complexity and repetition in the
+      structural content.
+    </p>
+    <h2>Inline CSS</h2>
+    <p style="color: blue; font-size: 18px">
+      This is a paragraph with inline CSS.
+    </p>
+    <h2>2. Internal (Embedded) CSS</h2>
+    <p>
+        Internal CSS involves embedding the CSS within
+        the style tag in the head section of the Html document. This method is
+        useful for single page styles that don't need to be applied elsewhere.
+        <p class="internal">This is a paragraph with internal CSS.</p>
+    </p>
+    <h2>External CSS</h2>
+    <p>External CSS is the most powerful and flexible method, where CSS rules are stored in a separate .css file. This file is linked to the HTML document using the link element inside the head section. This approach allows you to apply the same styling across multiple pages, promoting consistency and reducing code duplication.</p>
+    <p class="external">This is External</p>
+  </body>
+</html>

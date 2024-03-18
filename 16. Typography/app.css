@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+
+h1{
+    font-family: "Grey Qo", cursive;
+    font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.lor{
+    line-height: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    word-spacing: .10rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: grab;
+}
