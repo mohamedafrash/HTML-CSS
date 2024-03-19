@@ -1,0 +1,12 @@
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px dashed;
+    margin: 20px;
+    background-color: cadetblue;
+    /* box-sizing: border-box; Include padding and border in the element's width and height */
+  }
+  /* 
+    top bottom, right left
+  */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Box Model</h1>
+    <p>
+      The CSS Box Model is a fundamental concept in web design and development
+      that describes the rectangular boxes that are generated for elements in
+      the document tree and rendered according to the visual formatting model.
+      Each box has four areas, defined by their respective edges: the content
+      edge, padding edge, border edge, and margin edge.
+    </p>
+    <h2>Components of the Box Model</h2>
+    <ul>
+      <li>
+        <b>Content: </b>This is the area where text and images appear. Its size
+        can be controlled using the width and height properties.
+      </li>
+      <li>
+        <b>Padding:</b> Padding is the space between the content and the border.
+        ItMargin: and can increase the size of the box if a width and height are
+        set. Padding is included in the click area of a box.
+      </li>
+      <li>
+        <b>Border:</b> The border surrounds the padding (if any) and content.
+        It's the edge that can be styled with size, color, and style.
+      </li>
+      <li>
+        <b>Margin:</b> Margin is the outermost layer and creates space between
+        the element's border and its surrounding elements. Unlike padding,
+        margins are not part of the click area and are transparent.
+      </li>
+    </ul>
+    <p>
+      Box Model Properties width and height: Specify the width and height of the
+      content area. padding: Controls the padding area's size. Can be specified
+      for all sides together or for each side individually (padding-top,
+      padding-right, padding-bottom, padding-left). border: Defines the border's
+      width, style, and color. Like padding, it can be set for all sides or each
+      side individually. margin: Controls the size of the margin area. Can also
+      be specified for each side individually. Box-Sizing The box-sizing
+      property allows you to alter the box model's default behavior: content-box
+      (default): The width and height properties include only the content, not
+      the padding or border. border-box: The width and height properties include
+      content, padding, and border, but not the margin. This makes it easier to
+      size elements.
+    </p>
+    <div class="box"></div>
+  </body>
+</html>
