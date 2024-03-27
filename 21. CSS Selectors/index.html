@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1 id="title">Selectors</h1>
+    <h2>Basic Selectors</h2>
+    <p class="base">
+      Type Selector (Element): Targets all instances of an element. Example: div
+      { color: blue; } Class Selector: Targets elements with a specific class
+      attribute. Prefixed with a period (.). Example: .className { font-weight:
+      bold; } ID Selector: Targets an element with a specific ID attribute.
+      Prefixed with a hash (#). Example: #uniqueId { background-color: yellow; }
+      Universal Selector: Targets all elements in the document. Denoted by an
+      asterisk (*). Example: * { margin: 0; padding: 0; }
+    </p>
+    <h2>Combinator Selectors</h2>
+    <p>
+      Descendant Selector: Targets elements that are descendants of another
+      specified element (space-separated). Example: div span { color: red; }
+      Child Selector (>): Targets direct child elements only. Example: ul > li {
+      list-style-type: none; } Adjacent Sibling Selector (+): Targets an element
+      immediately preceded by a specific element. Example: h1 + p { font-size:
+      18px; } General Sibling Selector (~): Targets all siblings of an element
+      that are preceded by a specific element. Example: h1 ~ p { color: green; }
+    </p>
+    <h2>Attribute Selectors</h2>
+    <p>
+      Presence: [attr] - Elements with the attr attribute. Example: [disabled] {
+      opacity: 0.5; } Exact Value: [attr="value"] - Elements with attr attribute
+      equal to "value". Example: [type="text"] { background-color: #f0f0f0; }
+      Partial Value: [attr*="value"] - Elements with attr containing "value"
+      anywhere within it. Example: [class*="test"] { font-weight: bold; }
+    </p>
+    <h2>Grouping Selectors</h2>
+    <p>
+      Multiple selectors can be grouped together to apply the same styles to
+      various elements. Example: h1, h2, h3 { margin-top: 20px; }
+    </p>
+  </body>
+</html>

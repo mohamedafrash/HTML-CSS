@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Display Property</h1>
+    <p>
+      The display property in CSS determines how an element is displayed on the
+      web page. It's one of the most important CSS properties for controlling
+      layout. The value of this property defines the display behavior (the type
+      of rendering box) of an element.
+    </p>
+    <h2>Common display Values:</h2>
+    <p>
+      <li>
+        none: The element is completely removed from the document flow and not
+        rendered, meaning it takes up no space. Unlike visibility: hidden;,
+        display: none; removes the element from the document layout entirely.
+        Example: display: none;
+      </li>
+      <li>
+        block: The element is displayed as a block-level element, starting on a
+        new line and taking up the full width available. Examples of block-level
+        elements include div, p, and h1 to h6. Example: display: block;
+      </li>
+      <li>
+        inline: The element is displayed as an inline element, meaning it does
+        not start on a new line and only takes up as much width as necessary.
+        Examples of inline elements include span, a, and img. Example: display:
+        inline;
+      </li>
+      <li>
+        inline-block: The element is placed as an inline element (on the same
+        line as adjacent content), but it behaves as a block-level element
+        regarding the content inside it. This means you can set the element's
+        width and height values. Example: display: inline-block;
+      </li>
+      <li>
+        flex: The element behaves like a block-level element and lays out its
+        content according to the flexbox model. It's a modern layout mode that
+        provides a more efficient way to lay out, align, and distribute space
+        among items in a container. Example: display: flex;
+      </li>
+      <li>
+        grid: The element behaves like a block-level element and lays out its
+        content according to the grid model. It offers a grid-based layout
+        system with rows and columns, making it easier to design web pages
+        without having to use floats and positioning. Example: display: grid;
+      </li>
+      <li>
+        table, table-row, table-cell: These values make the element behave like
+        a table td tr, etc. respectively. They can be used for layouts that
+        require table-like structures. Example: display: table-cell;
+      </li>
+    </p>
+  </body>
+</html>

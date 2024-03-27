@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selectors</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Pseudo Selectors</h1>
+    <h2>Pseudo-Class Selectors</h2>
+    <ul>
+      Target elements in a specific state or position.
+      <li>
+        :hover: Targets an element when the mouse pointer is over it. Example:
+        a:hover { text-decoration: underline; }
+      </li>
+      <li>
+        :focus: Targets an element when it has focus. Example: input:focus {
+        border-color: blue; }
+      </li>
+      <li>
+        :nth-child(n): Targets the nth child of its parent. Example:
+        li:nth-child(odd) { background-color: grey; }
+      </li>
+    </ul>
+    <h2>Pseudo-Element Selectors</h2>
+    <ul>
+      Target part of an element's content in a way that's not possible with
+      other selectors.
+      <li>
+        ::before: Inserts content before an element's content. Example:
+        p::before { content: "Note: "; font-weight: bold; }
+      </li>
+      <li>
+        ::after: Inserts content after an element's content. Example: p::after {
+        content: ";"; }
+      </li>
+    </ul>
+  </body>
+</html>

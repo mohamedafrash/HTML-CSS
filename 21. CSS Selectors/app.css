@@ -1,0 +1,17 @@
+body{
+    background-color: cadetblue;
+    margin: 0;
+}
+#title{
+    color: crimson;
+    text-align: center;
+}
+
+h2{
+    color: chartreuse;
+    margin-left: 25px;
+}
+
+p{
+    background-color: antiquewhite;
+}
