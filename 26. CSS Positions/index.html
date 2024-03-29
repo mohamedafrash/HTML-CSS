@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Positions</h1>
+    <p>
+      CSS positioning is a fundamental concept that allows you to control the
+      layout and positioning of elements within a web page. The position
+      property in CSS specifies how an element is positioned in the document and
+      establishes the type of positioning context for children elements. Here
+      are the main values for the position property:
+    </p>
+    <a href="position.html">See it in action</a>
+    <h2>Static Positioning</h2>
+    <p>
+      <b>static:</b> This is the default position value. Elements are positioned
+      according to the normal document flow. The top, right, bottom, and left
+      properties do not affect statically positioned elements. <br />
+      <b>Example:</b> position: static;
+    </p>
+    <h2>Relative Positioning</h2>
+    <p>
+      <b>relative:</b> The element is positioned relative to its normal position
+      in the document flow. You can use the top, right, bottom, and left
+      properties to move the element from its original location. Other content
+      will not adjust to fill the gap. <br /><b>Example:</b> position: relative;
+      top: 10px; left: 20px;
+    </p>
+    <h2>Absolute Positioning</h2>
+    <p>
+      <b>absolute:</b> The element is removed from the normal document flow and
+      positioned relative to its nearest positioned ancestor (i.e., an ancestor
+      element with a position other than static). If no such ancestor exists,
+      the element is placed relative to the initial containing block (usually
+      the viewport or the html element). <br /><b>Example:</b> position:
+      absolute; top: 50px; right: 30px;
+    </p>
+    <h2>Fixed Positioning</h2>
+    <p>
+      <b>fixed:</b> Similar to absolute positioning, but the element is
+      positioned relative to the viewport, meaning it will stay in the same
+      place even if the page is scrolled. <br /><b>Example:</b> position: fixed;
+      bottom: 10px; right: 10px;
+    </p>
+    <h2>Sticky Positioning</h2>
+    <p>
+      <b>sticky:</b> A hybrid of relative and fixed positioning. The element is
+      treated as relative positioned until it crosses a specified point, then it
+      is treated as fixed positioned. This is often used for headers that should
+      scroll away with content but become fixed after a certain point. <br />
+      <b>Example:</b>
+      position: sticky; top: 0;
+    </p>
+    <h2>Z-Index</h2>
+    <p>
+      When elements overlap, the z-index property can control their stacking
+      order (which elements appear on top of others). z-index only works on
+      positioned elements (position value other than static). <br />
+      <b>Example:</b> position: relative; z-index: 5;
+    </p>
+    <h2>Considerations</h2>
+    <p>
+      <b>Normal Document Flow:</b> Understanding how position: static; works is
+      crucial since it's the default. Elements are laid out based on their order
+      in the HTML document. <br /><b>Containing Block:</b> For absolute and
+      fixed positioned elements, the reference point is the nearest positioned
+      ancestor. If there isn't one, they use the viewport or the document body.
+      <br /><b>Use Cases:</b> Each positioning type has specific use cases. For
+      example, fixed is commonly used for navigation bars, absolute for
+      dropdowns in a navbar, relative for minor adjustments from the normal
+      flow, and sticky for elements that should stick after a certain scroll
+      point. <br />Understanding CSS positioning is essential for effective web
+      layout and design, allowing for precise control over the placement and
+      behavior of elements.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .text {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .boxe {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    box-shadow: 3px 3px 5px #666, -2px -2px 5px #bbb;
+  }
+  
+  .texte {
+    text-shadow: 1px 1px #fff, 2px 2px #000;
+  }
+  
