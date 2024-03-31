@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <p>
+      CSS Flexbox, short for Flexible Box Layout, is a one-dimensional layout
+      method for laying out items in rows or columns within a container. It
+      allows for the distribution of space along a single axis, making it easier
+      to design flexible responsive layout structures without using floats or
+      positioning.
+    </p>
+    <h2>Key Concepts of Flexbox</h2>
+    <ul>
+      <li>
+        <b>Flex Container:</b> The element that uses the display: flex; or
+        display: inline-flex; property becomes a flex container.
+      </li>
+      <li>
+        <b>Flex Items:</b> The direct children of a flex container automatically
+        become flex items.
+      </li>
+      <li>
+        <b>Main Axis:</b> The primary axis along which flex items are laid out.
+        It can be horizontal (default) or vertical, depending on the
+        flex-direction property.
+      </li>
+      <li><b>Cross Axis:</b> The axis perpendicular to the main axis.</li>
+    </ul>
+    <h2>Flex Container Properties</h2>
+    <ul>
+      <li>
+        <b>display:</b> This defines a flex container. Use display: flex; for a
+        block-level flex container or display: inline-flex; for an inline-level
+        flex container.
+      </li>
+      <li>
+        <b>flex-direction:</b> Defines the main axis direction (row,
+        row-reverse, column, column-reverse).
+      </li>
+      <li>
+        <b>flex-wrap:</b> Controls whether the flex items are forced into a
+        single line or can wrap onto multiple lines (nowrap, wrap,
+        wrap-reverse).
+      </li>
+      <li>
+        <b>justify-content:</b> Aligns flex items along the main axis
+        (flex-start, flex-end, center, space-between, space-around,
+        space-evenly).
+      </li>
+      <li>
+        <b>align-items:</b> Aligns flex items along the cross axis (flex-start,
+        flex-end, center, baseline, stretch).
+      </li>
+      <li>
+        <b>align-content:</b> Aligns flex lines within the flex container when
+        there's extra space on the cross axis (flex-start, flex-end, center,
+        space-between, space-around, stretch). This property has an effect only
+        when there are multiple lines of flex items.
+      </li>
+    </ul>
+    <h2>Flex Item Properties</h2>
+    <ul>
+      <li>
+        <b>flex-grow:</b> Defines the ability for a flex item to grow if
+        necessary. It accepts a unitless value that serves as a proportion.
+      </li>
+      <li>
+        <b>flex-shrink:</b> Defines the ability for a flex item to shrink if
+        necessary.
+      </li>
+      <li>
+        <b>flex-basis:</b> Defines the default size of an element before the
+        remaining space is distributed.
+      </li>
+      <li>
+        <b>flex:</b> A shorthand for flex-grow, flex-shrink, and flex-basis
+        combined.
+      </li>
+      <li>
+        <b>align-self:</b> Allows the default alignment (or the one specified by
+        align-items) to be overridden for individual flex items.
+      </li>
+    </ul>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </body>
+</html>
