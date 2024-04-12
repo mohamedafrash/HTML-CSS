@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Grid</h1>
+    <p>
+      CSS Grid Layout (commonly known as CSS Grid) is a powerful two-dimensional
+      system that revolutionizes how web developers can create complex layouts
+      on the web. It allows for the creation of grid-based designs where items
+      can be placed into precise columns and rows. Unlike Flexbox, which is
+      great for one-dimensional layouts (either a row or a column), CSS Grid is
+      designed to handle both rows and columns simultaneously.
+    </p>
+    <h2>Key Concepts of CSS Grid</h2>
+    <ul>
+      <li>
+        <b>Grid Container:</b> The element on which display: grid; or display:
+        inline-grid; is applied. It becomes the grid container.
+      </li>
+      <li><b>Grid Item:</b> The direct children of the grid container.</li>
+      <li>
+        <b>Grid Line:</b> The dividing lines that make up the structure of the
+        grid. They can be vertical (column lines) or horizontal (row lines).
+      </li>
+      <li>
+        <b>Grid Track:</b> The space between two adjacent grid lines. You can
+        think of them as columns or rows.
+      </li>
+      <li>
+        <b>Grid Cell:</b> The space between two adjacent row and two adjacent
+        column grid lines. It's a single "cell" in the grid.
+      </li>
+      <li>
+        <b>Grid Area:</b> A total space surrounded by four grid lines. A grid
+        area may be composed of any number of grid cells.
+      </li>
+    </ul>
+    <h2>Grid Container Properties</h2>
+    <ul>
+      <li>
+        <b>display:</b> Defines an element as a grid container and establishes a
+        new grid formatting context for its contents.
+      </li>
+      <li>
+        <b>Values:</b> grid (creates a block-level grid), inline-grid (creates
+        an inline-level grid).
+      </li>
+      <li>
+        <b>grid-template-columns and grid-template-rows:</b> Defines the columns
+        and rows of the grid with a space-separated list of values. The values
+        represent the size of the grid lines.
+      </li>
+      <li>
+        <b>grid-gap</b> (also known as gap in the newest syntax): Sets the
+        spacing between the grid items.
+      </li>
+      <li>
+        <b>grid-auto-rows and grid-auto-columns:</b> Specifies the size of any
+        auto-generated grid rows (or columns).
+      </li>
+      <li>
+        <b>grid-template-areas:</b> Defines a grid template by referencing the
+        names of grid areas.
+      </li>
+    </ul>
+    <h2>Grid Item Properties</h2>
+    <ul>
+      <li>
+        <b
+          >grid-column-start, grid-column-end, grid-row-start, and
+          grid-row-end:</b
+        >
+        Determine where a grid item’s placement begins and ends.
+      </li>
+      <li>
+        <b>grid-column and grid-row:</b> Shorthand properties for setting grid
+        items' start and end lines simultaneously.
+      </li>
+      <li>
+        <b>grid-area:</b> Can specify a grid item’s location within the grid by
+        referring to a custom name assigned to one of the grid-template-areas.
+      </li>
+    </ul>
+    <div class="container">
+      <div class="item-a">Item A</div>
+      <div class="item-b">Item B</div>
+    </div>
+  </body>
+</html>
