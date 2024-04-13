@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc()</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Css Calc()</h1>
+    <p>
+      The CSS calc() function is a versatile tool that allows you to perform
+      calculations to determine CSS property values. This function can be
+      incredibly useful for creating dynamic layouts and sizes that adapt to
+      different conditions in a responsive design. It supports basic arithmetic
+      operations like addition, subtraction, multiplication, and division.
+    </p>
+    <h2>Key Features of calc()</h2>
+    <ul>
+      <li>
+        <b>Mix Units:</b> calc() can combine different units, making it possible
+        to use percentages, pixels, ems, rems, vh, vw, and more within a single
+        expression. This is particularly useful in responsive designs where you
+        might want to mix fixed and relative sizes.
+      </li>
+      <li>
+        <b>Nested Calculations:</b> You can nest multiple calc() functions
+        within each other to perform complex computations.
+      </li>
+      <li>
+        <b>Compatibility:</b> calc() is widely supported in all modern browsers,
+        making it a reliable choice for cross-browser compatibility.
+      </li>
+    </ul>
+    <p>
+      Syntax css Copy code calc(expression) Where expression is a formula that
+      can include: Numerical values: e.g., 10, 20px, 50% Operators: +, -, *, /
+      Parentheses for grouping: e.g., (10px + 100%) Common Uses of calc()
+      Responsive Layouts: Adjust widths, margins, and positions that respond to
+      viewport changes while including offsets or additional static space. css
+      Copy code width: calc(100% - 20px); This sets the width of an element to
+      be the full width of its container minus 20 pixels. Mixing Units: Combine
+      relative and absolute measurements. css Copy code font-size: calc(1rem +
+      2vw); This adjusts the font size dynamically based on the width of the
+      viewport while starting with a base size of 1rem. Vertical Centering:
+      Position elements vertically when you know their height. css Copy code
+      top: calc(50% - 20px); This positions the top of an element halfway down
+      its container, minus 20 pixels to offset half its height for true
+      centering (assuming the element is 40px tall). Grid Gaps in Layouts:
+      Create layouts with consistent spacing between items. css Copy code
+      grid-template-columns: repeat(auto-fill, calc((100% - 30px) / 4)); This
+      creates a grid layout with columns that automatically fill the space,
+      accounting for 30px of total gap, evenly distributed.
+    </p>
+    <div class="container">
+      <section class="item">Hello</section>
+    </div>
+  </body>
+</html>

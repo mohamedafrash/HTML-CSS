@@ -1,0 +1,10 @@
+.container {
+    width: calc(100vw - 100px); /* Full viewport width minus 100px */
+    height: calc(50vh + 10%); /* 50% of viewport height plus 10% */
+  }
+  
+  .item {
+    padding: calc(1rem + 2%); /* Combine relative and absolute units for padding */
+    margin-bottom: calc(5px + 1vh); /* Bottom margin that increases with viewport height */
+  }
+  

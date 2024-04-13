@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mix-Blend-Mode</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Mix Blend Mode</h1>
+    <p>
+      CSS mix-blend-mode property allows you to specify how an element's content
+      should blend with the content of the element's background or the elements
+      below it. This property can create visually interesting effects on your
+      web pages, such as color blending, contrast adjustments, and more
+      sophisticated visual effects that previously might have required image
+      editing software.
+    </p>
+    <ul>
+      Key Features of mix-blend-mode
+      <li>
+        Blend Modes: Similar to blend modes in graphics editing applications
+        like Photoshop, mix-blend-mode controls how pixels in two layers
+        combine.
+      </li>
+      <li>
+        Use Cases: It's particularly useful for effects like darkening,
+        lightening, or applying color shifts to areas, or for creating visually
+        compelling overlays and effects.
+      </li>
+    </ul>
+    <p>
+      Common mix-blend-mode Values Here are some of the more commonly used
+      values for mix-blend-mode: normal: This is the default value, where no
+      blending is applied. multiply: Multiplies the background and the element's
+      colors, resulting in a darker color. screen: Combines the background and
+      the element's colors to produce a lighter color. overlay: Combines
+      multiply and screen blend modes to either multiply or screen colors,
+      depending on the base color. darken: Selects the darker of the base or
+      blend color as the color of the resulting pixel. lighten: Selects the
+      lighter of the base or blend color as the color of the resulting pixel.
+      color-dodge: Brightens the base color to reflect the blend color.
+      color-burn: Darkens the base color to reflect the blend color. hard-light:
+      Acts like overlay, but with the layer roles reversed. soft-light: Softens
+      the color by either darkening or lightening. difference: Subtracts the
+      darker of the two constituent colors from the lighter color. exclusion:
+      Similar to difference, but with lower contrast. hue, saturation, color,
+      luminosity: These create composite colors based on the hue, saturation,
+      color, or luminosity of the blend and base layers.
+    </p>
+    <div class="image-overlay">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1675826774817-fe983ceb0475?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Background photo"
+      />
+      <p style="mix-blend-mode: screen">This is overlay text.</p>
+    </div>
+  </body>
+</html>
