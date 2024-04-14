@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>CSS Transform</h1>
+    <p>
+      The CSS transform property allows you to manipulate the position, size,
+      and rotation of elements, enabling complex visual effects in an easy and
+      efficient way. Transform is widely used to create interactive and dynamic
+      effects on web pages.
+    </p>
+    <h2>Key Features of CSS transform</h2>
+    <ul>
+      <li>
+        <b>2D and 3D Transformations:</b> transform supports both
+        two-dimensional and three-dimensional transformations.
+      </li>
+      <li>
+        <b>Multiple Functions:</b> You can apply multiple transformation
+        functions simultaneously.
+      </li>
+      <li>
+        <b>Performance:</b> Transformations are hardware accelerated in most
+        modern browsers, meaning they can achieve smooth animations and
+        transitions without significant impact on performance.
+      </li>
+    </ul>
+    <p>
+      Common Transform Functions 2D Transforms translate(x, y): Moves an element
+      horizontally and vertically from its current position. Example: transform:
+      translate(50px, 100px); scale(x, y): Scales an element by x (width) and y
+      (height). If y is not defined, it's assumed to be equal to x. Example:
+      transform: scale(2, 3); rotate(angle): Rotates an element clockwise from
+      its original position. Example: transform: rotate(45deg); skewX(angle) and
+      skewY(angle): Skews the shape of an element along the X (horizontal) or Y
+      (vertical) axis. Example: transform: skewX(30deg); 3D Transforms
+      translate3d(x, y, z), translateX(x), translateY(y), translateZ(z): Moves
+      the element in 3D space. Example: transform: translate3d(100px, 100px,
+      50px); scale3d(x, y, z), scaleX(x), scaleY(y), scaleZ(z): Scales the
+      element in 3D space. Example: transform: scale3d(2, 2, 3); rotateX(angle),
+      rotateY(angle), rotateZ(angle): Rotates the element around its X, Y, or Z
+      axis. Example: transform: rotateX(45deg); perspective(n): Defines the
+      perspective from which the viewer sees the transformed object. Example:
+      transform: perspective(500px) rotateY(45deg); Combining Transforms You can
+      apply multiple transformations in a single transform property, executed in
+      the order specified: css Copy code transform: rotate(30deg)
+      translate(100px, 50px) scale(1.5); Usage Considerations Origin: The point
+      about which transformations are applied. By default, this is the center of
+      the element, but it can be changed using the transform-origin property.
+      Example: transform-origin: left top; Animation: Transformations can be
+      animated or transitioned for dynamic effects. Accessibility: While visual
+      transformations can enhance interactivity, ensure they do not impede
+      accessibility. Consider the implications of transformed elements on screen
+      readers and users with motion sensitivity.
+    </p>
+    <div>Rotated Box</div>
+  </body>
+</html>

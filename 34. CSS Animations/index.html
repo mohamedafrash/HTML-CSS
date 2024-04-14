@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaations</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Css Animaations</h1>
+    <p>
+      CSS animations are a powerful feature that allows you to create complex,
+      multi-step animations using CSS alone. Unlike CSS transitions, which are
+      intended for simple changes from one state to another, CSS animations
+      offer more control over how styles change and can define multiple
+      keyframes and states of the animation.
+    </p>
+    <p>
+      Key Features of CSS Animations Keyframes: CSS animations work by defining
+      @keyframes that specify the styles at various points during the animation.
+      You can control the intermediate steps between the start and end of the
+      animation, allowing for more complex sequences. Control: You have full
+      control over the timing, duration, delay, and number of times an animation
+      should repeat. Fallbacks: Animations degrade gracefully. If CSS animations
+      are not supported, the styles defined within the animation will not apply,
+      and the user will see the static state of the elements. Syntax and Usage
+      To create a CSS animation, you need two key pieces: @keyframes Rule: This
+      at-rule defines the styles at various points during the animation. You
+      specify what should happen at specific stages of the animation. Each stage
+      can be denoted as a percentage of the total animation time from 0% (start)
+      to 100% (completion).
+    </p>
+    <p>
+      Animation Properties: These properties control how the animation is
+      applied to elements. Here are the most common properties: animation-name:
+      Specifies the name of the @keyframes rule to use. animation-duration: How
+      long the animation should take to complete one cycle.
+      animation-timing-function: How the animation progresses through the
+      duration of each cycle (similar to transition-timing-function).
+      animation-delay: Time to wait before starting the animation.
+      animation-iteration-count: How many times the animation should repeat.
+      infinite for endless repetition. animation-direction: Whether the
+      animation should reverse direction after each cycle. animation-fill-mode:
+      Defines how a CSS animation should apply styles to its target before and
+      after its execution.
+    </p>
+    <div class="element"></div>
+  </body>
+</html>
